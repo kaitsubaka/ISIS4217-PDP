@@ -7,9 +7,9 @@ fun{Avg Data}
     case Data
       of nil then if Count > 0 then {Int.toFloat Total}/{Int.toFloat Count} else {Int.toFloat Total} end
       [] X|Xr then {InnerCalculus Xr Total+X Count}
-      end
+    end
   end
-  in
+in
   "The average is: "#{Float.toString {InnerCalculus Data 0 {List.length Data}}}
 end
 
