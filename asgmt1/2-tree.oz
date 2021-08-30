@@ -17,7 +17,7 @@ fun {Search Key TreeIn}
     case TreeIn 
     of nil then TreeIn
     [] node(K1 V1 T1 T2) then 
-        if Key == K1 then node(Key Value T1 T2)
+        if Key == K1 then TreeIn
         elseif Key < K1 then 
             {Search K1 T1}
         else 
@@ -48,7 +48,7 @@ proc {Delete Key TreeIn ?TreeOut}
         if {And T1 == nil T2 == nil} then nil
         elseif {Not {And T1 == nil T2 == nil}} then MaxNode NewT1 in
             TreeOut = node(MaxNode.Key MaxNode.Value NewT1 T2)
-            {Delete MaxNode.Key T1}
+            {Delete MaxNode.Key NewT1}
             {FindMax T1 node(K1 V1 T1 T2) MaxNode}
         elseif {Not T1 == nil} then TreeOut = T1
         elseif {Not T2 == nil} then TreeOut = T2
