@@ -1,4 +1,7 @@
-/* Apply is the function that will be executed for each element -> F(X),
+/* 
+Alvaro javier Ayte Paz 201618951
+
+Apply is the function that will be executed for each element -> F(X),
 Xs is the BODY -> [], 
 Condition is the conditional for the element -> F(X)*/ 
 declare 

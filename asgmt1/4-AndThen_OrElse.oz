@@ -1,4 +1,5 @@
-/*
+/* 
+Alvaro javier Ayte Paz 201618951
 F is the first logic function that will be evaluated
 G is the second logic function that will be evaluated
 Return the evaluation of F and G if F returns true, otherwise return false.

@@ -1,3 +1,6 @@
+/* 
+Alvaro javier Ayte Paz 201618951
+*/
 % tests are at the end. im too exausted for comment all this function, but they are
 % self descreptive
 declare
